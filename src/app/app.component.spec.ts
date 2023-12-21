@@ -3,10 +3,10 @@ import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [AppComponent],
-    }).compileComponents();
-  });
+  await TestBed.configureTestingModule({
+    declarations: [AppComponent], // Fix the property name
+  }).compileComponents();
+});
 
   it('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);
